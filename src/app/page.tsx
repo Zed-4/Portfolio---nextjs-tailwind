@@ -1,112 +1,63 @@
-import Image from 'next/image'
-
+// backdrop-filter-none backdrop-blur-sm bg-white/30      sm:mx-32 md:mx-40 lg:mx-44
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="flex flex-col h-screen bg-cover bg-center bg-[url(https://repository-images.githubusercontent.com/588181932/e36ec678-7984-4cdd-8e4c-a3932772ff8e)]">
+      <div className="flex flex-row h-screen backdrop-blur-xl">
+        {/*---------------------------------------------------------------Main---------------------------------------------------------------*/}
+        <div className="min-[320px]:w-screen w-screen flex min-[320px]:flex-col md:flex-row min-[320px]:justify-normal lg:justify-around">
+          <div className="min-[320px]:text-2xl lg:text-3xl xl:text-7xl font-bold mx-4 mt-20 h-min">
+            Abtin O.
+          </div>
+          <div className="">
+            <div className="shadow-2xl hover:shadow-inner min-[320px]:mt-10 md:mt-52 rounded-lg h-min min-[320px]:mx-4 p-4 lg:px-8 hover:bg-black/20 lg:text-2xl font-bold text-center">
+              ABOUT
+              <hr className="mb-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
+              <p className="max-w-4xl transition ease-in-out hover:scale-105 min-[320px]:text-sm lg:text-xl font-normal">
+                As a Computer Engineering student graduated in the spring of 2023 from University of North Texas,
+                I am a highly motivated and analytical individual with a strong foundation in both hardware and software systems.
+                Throughout my studies, I have gained a comprehensive understanding of computer systems and their applications,
+                including computer architecture, operating systems, computer networks, and programming languages. In addition to my technical skills,
+                I am also a strong problem-solver and have the ability to think critically and creatively to find solutions to complex challenges.
+                I am eager to apply my knowledge and skills to real-world problems and am excited to begin my career as a computer engineer.
+              </p>
+              <hr className="mt-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
+            </div>
+            <div className="shadow-2xl hover:shadow-inner min-[320px]:mt-10 md:mt-22 rounded-lg h-min min-[320px]:mx-4 p-4 lg:px-8 hover:bg-black/20 lg:text-2xl font-bold text-center">
+              TITLE
+              <hr className="mb-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
+              <p className="max-w-4xl transition ease-in-out hover:scale-105 min-[320px]:text-sm lg:text-xl font-normal">
+                Poop
+              </p>
+              <hr className="mt-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        {/*---------------------------------------------------------------Footer---------------------------------------------------------------*/}
+        <div className="fixed bottom-0 w-screen bg-cover bg-center bg-[url(https://gifdb.com/images/high/computer-system-coding-j3szfjv9fwb5at9x.gif)]">
+          <div className="backdrop-blur-sm flex justify-center">
+            {[
+              ['Email', 'mailto:abtin.ortgoli@yahoo.com', '/gmail.png', 'Email'],
+              ['Linkedin', 'https://www.linkedin.com/in/abtin-ortgoli/', '/linkedin.png', 'Linkedin'],
+              ['Github', 'https://github.com/Zed-4', '/github.png', 'Github'],
+              ['Gitlab', 'https://gitlab.com/antin.ortholi', '/gitlab.png', 'Gitlab'],
+            ].map(([title, url, img, alt]) => (
+              <a href={url} target="_blank" className="
+              transition ease-in-out
+              hover:-translate-y-2
+              hover:scale-110
+              flex
+              items-center
+              rounded-lg
+              px-2
+              text-slate-100
+              font-medium
+              hover:text-slate-100">
+                <img className="min-[320px]:max-h-8 sm:max-h-10 lg:max-h-20 w-full" src={img} alt={alt} />
+                <h2 className="min-[320px]:text-sm md:text-2xl lg:text-2xl">{title}</h2>
+              </a>
+            ))}
+          </div>
+        </div>
       </div>
     </main>
   )
