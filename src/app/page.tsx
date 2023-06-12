@@ -1,13 +1,15 @@
-// backdrop-filter-none backdrop-blur-sm bg-white/30      sm:mx-32 md:mx-40 lg:mx-44
-import image from "/public/code.gif";
+/* eslint-disable @next/next/no-img-element */
+
+// import image from "/public/code.gif";
+
 export default function Home() {
   return (
-    <main className="bg-repeat h-screen w-full bg-cover bg-center bg-[url(https://repository-images.githubusercontent.com/588181932/e36ec678-7984-4cdd-8e4c-a3932772ff8e)]">
+    <main className="bg-repeat min-h-screen bg-fixed bg-center bg-[url(https://repository-images.githubusercontent.com/588181932/e36ec678-7984-4cdd-8e4c-a3932772ff8e)]">
       {/* <img
         src={image.src}
         className="object-cover h-full"
         alt="Image alt text" /> */}
-      <div className="flex flex-col mb-auto h-screen backdrop-blur-xl justify-between">
+      <div className="flex flex-col backdrop-blur-xl justify-between">
         {/*---------------------------------------------------------------Main---------------------------------------------------------------*/}
         <div className="min-[320px]:w-screen w-screen flex min-[320px]:flex-col md:flex-row min-[320px]:justify-normal lg:justify-around">
           <div className="min-[320px]:text-2xl lg:text-3xl xl:text-7xl font-bold mx-4 mt-20 h-min">
@@ -73,17 +75,12 @@ export default function Home() {
               ['Github', 'https://github.com/Zed-4', '/github.png', 'Github'],
               ['Gitlab', 'https://gitlab.com/antin.ortholi', '/gitlab.png', 'Gitlab'],
             ].map(([title, url, img, alt]) => (
-              <a href={url} target="_blank" className="
-              transition ease-in-out
-              hover:-translate-y-2
-              hover:scale-110
-              flex
-              items-center
-              rounded-lg
-              px-2
-              text-slate-100
-              font-medium
-              hover:text-slate-100">
+              <a
+                key={title}
+                href={url}
+                target="_blank"
+                className="transition ease-in-out hover:-translate-y-2 hover:scale-110 flex items-center rounded-lg px-2 text-slate-100 font-medium hover:text-slate-100"
+              >
                 <img className="min-[320px]:max-h-8 sm:max-h-10 lg:max-h-20 w-full" src={img} alt={alt} />
                 <h2 className="min-[320px]:text-sm md:text-2xl lg:text-2xl">{title}</h2>
               </a>
