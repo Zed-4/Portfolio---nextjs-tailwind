@@ -4,11 +4,7 @@
 
 export default function Home() {
   return (
-    <main className="bg-repeat min-h-screen bg-fixed bg-center bg-[url(https://repository-images.githubusercontent.com/588181932/e36ec678-7984-4cdd-8e4c-a3932772ff8e)]">
-      {/* <img
-        src={image.src}
-        className="object-cover h-full"
-        alt="Image alt text" /> */}
+    <main className="flex bg-repeat min-h-screen bg-fixed bg-center bg-[url(https://repository-images.githubusercontent.com/588181932/e36ec678-7984-4cdd-8e4c-a3932772ff8e)]">
       <div className="flex flex-col backdrop-blur-xl justify-between">
         {/*---------------------------------------------------------------Main---------------------------------------------------------------*/}
         <div className="min-[320px]:w-screen w-screen flex min-[320px]:flex-col md:flex-row min-[320px]:justify-normal lg:justify-around">
