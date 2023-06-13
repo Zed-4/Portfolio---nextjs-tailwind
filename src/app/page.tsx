@@ -11,11 +11,29 @@ export default function Home() {
         alt="Image alt text" /> */}
       <div className="backdrop-blur-xl">
         {/*---------------------------------------------------------------Main---------------------------------------------------------------*/}
-        <div className="min-[320px]:w-screen overflow-auto h-screen w-screen flex min-[320px]:flex-col md:flex-row min-[320px]:justify-normal lg:justify-around">
+        <div className="min-[320px]:w-screen overflow-auto h-screen w-screen flex min-[320px]:flex-col xl:flex-row min-[320px]:justify-normal 2xl:justify-around">
           <div className="min-[320px]:text-2xl lg:text-3xl xl:text-7xl font-bold mx-4 mt-20 h-min">
-            Abtin O.
+            <div className="text-center">Abtin O.</div>
             <hr className="mt-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-900 to-transparent opacity-25 dark:opacity-100" />
-            <div className="mt-2 text-center font-normal min-[320px]:text-lg lg:text-xl xl:text-2xl">Computer Engineer</div>
+            <div className=" text-center font-serif font-normal min-[320px]:text-lg lg:text-xl xl:text-2xl">Computer Engineer</div>
+            <div className="mt-2 font-bold min-[320px]:text-lg lg:text-xl xl:text-2xl">Skills</div>
+            <div className="flex flex-wrap max-w-md">
+              {[
+                ['C/C++'],
+                ['Arduino'],
+                ['Embeded Systems'],
+                ['Python'],
+                ['JavaScript'],
+                ['React.js'],
+                ['Next.js'],
+                ['Chakra UI'],
+                ['Tailwind'],
+                ['VHDL'],
+                ['BIlingual-Persian'],
+              ].map(([heroSkill]) => (
+                <div className="mb-1 ml-2 whitespace-nowrap transition ease-in-out hover:scale-110 cursor-pointer bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">{heroSkill}</div>
+              ))}
+            </div>
           </div>
           <div className="">
             {/*---------------------------------------------------------------About---------------------------------------------------------------*/}
@@ -69,19 +87,21 @@ export default function Home() {
                           </h3>
                           <div className="w-48 mt-1 text-sm text-gray-800">{projectDesc}</div>
                         </div>
-                        <p className="ml-1 text-sm font-medium text-gray-900">{projectDates}</p>
+                        <p className="whitespace-nowrap ml-1 text-sm font-medium text-gray-900">{projectDates}</p>
                       </div>
                     </div>
                   </div>
-                  <span className="ml-2 bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">{skills}</span>
-                  <span className="ml-2 bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">{skillsSecond}</span>
+                  <div className="flex flex-wrap">
+                    <div className="ml-2 w-min h-min whitespace-nowrap transition ease-in-out hover:scale-110 cursor-pointer bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">{skills}</div>
+                    <div className="ml-2 w-min h-min whitespace-nowrap transition ease-in-out hover:scale-110 cursor-pointer bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">{skillsSecond}</div>
+                  </div>
                 </div>
               ))}
             </div>
           </div>
         </div>
-        {/*---------------------------------------------------------------Footer---------------------------------------------------------------*/}
-        <section className="rounded-full absolute bottom-0 m-auto min-[320px]:left-5 min-[320px]:right-5 sm:left-1/4 sm:right-1/4 bg-cover bg-center bg-[url(https://gifdb.com/images/high/computer-system-coding-j3szfjv9fwb5at9x.gif)]">
+        {/*---------------------------------------------------------------Footer--------------------------------sm:left-1/4 sm:right-1/4-------------------------------*/}
+        <section className="pr-2 rounded-full absolute bottom-0 m-auto min-[320px]:left-5 min-[320px]:right-5min-[320px]:left-5 min-[320px]:right-5 lg:w-2/5 bg-cover bg-center bg-[url(https://gifdb.com/images/high/computer-system-coding-j3szfjv9fwb5at9x.gif)]">
           <div className="rounded-full backdrop-blur-sm flex justify-center">
             {[
               ['Email', 'mailto:abtin.ortgoli@yahoo.com', '/gmail.png', 'Email'],
@@ -95,8 +115,8 @@ export default function Home() {
                 target="_blank"
                 className="transition ease-in-out hover:-translate-y-2 hover:scale-110 flex items-center rounded-lg px-2 text-slate-100 font-medium hover:text-slate-100"
               >
-                <img className="min-[320px]:max-h-8 sm:max-h-10 lg:max-h-20 w-full" src={img} alt={alt} />
-                <h2 className="min-[320px]:text-sm md:text-lg lg:text-2xl">{title}</h2>
+                <img className="min-[320px]:max-h-6 sm:max-h-14 lg:max-h-10 xl:max-h-16 w-full" src={img} alt={alt} />
+                <h2 className="min-[320px]:text-xs sm:text-xl lg:text-sm xl:text-lg">{title}</h2>
               </a>
             ))}
           </div>
