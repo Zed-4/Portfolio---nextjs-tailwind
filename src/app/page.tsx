@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 
-import image from "/public/code.gif";
+// import image from "/public/code.gif";
 
 export default function Home() {
   return (
@@ -14,11 +14,13 @@ export default function Home() {
         <div className="min-[320px]:w-screen overflow-auto h-screen w-screen flex min-[320px]:flex-col md:flex-row min-[320px]:justify-normal lg:justify-around">
           <div className="min-[320px]:text-2xl lg:text-3xl xl:text-7xl font-bold mx-4 mt-20 h-min">
             Abtin O.
+            <hr className="mt-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-900 to-transparent opacity-25 dark:opacity-100" />
+            <div className="mt-2 text-center font-normal min-[320px]:text-lg lg:text-xl xl:text-2xl">Computer Engineer</div>
           </div>
           <div className="">
             {/*---------------------------------------------------------------About---------------------------------------------------------------*/}
             {/*line-clamp-3 hover:line-clamp-none*/}
-            <div className="max-w-4xl shadow-2xl hover:shadow-inner min-[320px]:mt-10 md:mt-52 rounded-lg h-min min-[320px]:mx-4 p-4 lg:px-8 pb-1 hover:bg-black/20 lg:text-2xl font-bold text-center">
+            <div className="max-w-4xl shadow-2xl hover:shadow-inner min-[320px]:mt-10 md:mt-52 rounded-lg h-min min-[320px]:mx-4 p-4 lg:px-8 pb-1 lg:text-2xl font-bold text-center">
               ABOUT
               <hr className="mb-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
               <p className="transition ease-in-out hover:scale-105 min-[320px]:text-sm lg:text-lg font-normal">
@@ -29,10 +31,9 @@ export default function Home() {
                 I am also a strong problem-solver and have the ability to think critically and creatively to find solutions to complex challenges.
                 I am eager to apply my knowledge and skills to real-world problems and am excited to begin my career as a computer engineer.
               </p>
-              <hr className="mt-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
             </div>
             {/*---------------------------------------------------------------TITLE---------------------------------------------------------------*/}
-            <div className="max-w-4xl shadow-2xl hover:shadow-inner min-[320px]:mt-10 md:mt-22 rounded-lg min-[320px]:mx-4 p-4 lg:px-8 hover:bg-black/20 lg:text-2xl font-bold text-center">
+            {/* <div className="max-w-4xl shadow-2xl hover:shadow-inner min-[320px]:mt-10 md:mt-22 rounded-lg min-[320px]:mx-4 p-4 lg:px-8 lg:text-2xl font-bold text-center">
               TITLE
               <hr className="mb-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
               <p className="transition ease-in-out hover:scale-105 min-[320px]:text-sm lg:text-xl font-normal">
@@ -43,19 +44,18 @@ export default function Home() {
                 any typing errors that are made may not be noticed immediately due to the user not looking at the screen.
                 There is also the disadvantage that because fewer fingers are used, those that are used are forced to move a much greater distance.
               </p>
-              <hr className="mt-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
-            </div>
+            </div> */}
             {/*---------------------------------------------------------------Projects---------------------------------------------------------------*/}
             <div className="overflow-hidden hover:overflow-auto flex mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
               {[
                 ['Project I', 'https://github.com/Zed-4/Arduino', '/clock.png', 'Digital Clock', 'Digital Clock', 'use both Millis and interrupts to make a working digital clock using no delays', '5-2022', 'C++', 'Arduino'],
-                ['Project II', 'https://github.com/Zed-4/Li-Fi_System', '/lifi.png', 'Li-Fi System', 'Li-Fi System', 'to Investigate and demonstrate a prototype of Li-Fi technology', '4-2023', 'Python', 'Raspberri Pi'],
+                ['Project II', 'https://github.com/Zed-4/Li-Fi_System', '/lifi.png', 'Li-Fi System', 'Li-Fi System', 'to Investigate and demonstrate a prototype of Li-Fi technology', '4-2023', 'Python', 'Raspberry Pi'],
                 ['Project III', 'https://github.com/Zed-4/Portfolio', '/portfolio.png', 'Portfolio', 'Portfolio', 'Portfolio page made using React and Chakra UI', '6-2023', 'React.js', 'Chakra UI'],
                 ['Project IV', 'https://github.com/Zed-4/Texas-Census-Data', '/map.png', 'Texas-Census-Data', 'Texas Census Data Map', 'A cencus data map of Texas built using ©mapbox and Next.js', '12-2022', 'Next.js', '©Mapbox'],
               ].map(([projectTitle, projectUrl, projectImg, projectAlt, projectName, projectDesc, projectDates, skills, skillsSecond]) => (
                 <div className="">
                   <h2 className="shadow-md text-2xl font-bold  ml-2 tracking-tight text-gray-900">{projectTitle}</h2>
-                  <div className="shadow-md hover:shadow-inner mx-2 p-1 mt-2 grid gap-x-6 gap-y-10 min-[320px]:h-48 lg:h-80">
+                  <div className="shadow-md hover:shadow-inner mx-2 p-1 mt-2 gap-x-6 gap-y-10 min-[320px]:h-48 lg:h-80">
                     <div className="group relative">
                       <div className="aspect-h-1 aspect-w-1 min-[320px]:w-20 lg:w-48 overflow-hidden rounded-md lg:aspect-none group-hover:opacity-50">
                         <a href={projectUrl} target="_blank">
@@ -69,7 +69,7 @@ export default function Home() {
                           </h3>
                           <div className="w-48 mt-1 text-sm text-gray-800">{projectDesc}</div>
                         </div>
-                        <p className="text-sm font-medium text-gray-900">{projectDates}</p>
+                        <p className="ml-1 text-sm font-medium text-gray-900">{projectDates}</p>
                       </div>
                     </div>
                   </div>
