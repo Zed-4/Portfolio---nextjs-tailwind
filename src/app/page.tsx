@@ -50,7 +50,7 @@ export default function Home() {
                 I am eager to apply my knowledge and skills to real-world problems and am excited to begin my career as a computer engineer.
               </p>
             </div>
-            {/*---------------------------------------------------------------TITLE---------------------------------------------------------------*/}
+            {/*---------------------------------------------------------------EXPERIENCE---------------------------------------------------------------*/}
             <div className="font-serif max-w-4xl shadow-2xl hover:shadow-inner min-[320px]:mt-10 rounded-lg h-min min-[320px]:mx-4 p-4 lg:px-8 pb-1 lg:text-2xl font-bold text-center">
               EXPERIENCE
               <hr className="mb-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
