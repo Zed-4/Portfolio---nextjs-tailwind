@@ -38,10 +38,10 @@ export default function Home() {
           <div className="">
             {/*---------------------------------------------------------------About---------------------------------------------------------------*/}
             {/*line-clamp-3 hover:line-clamp-none*/}
-            <div className="max-w-4xl shadow-2xl hover:shadow-inner min-[320px]:mt-10 md:mt-52 rounded-lg h-min min-[320px]:mx-4 p-4 lg:px-8 pb-1 lg:text-2xl font-bold text-center">
+            <div className="font-serif max-w-4xl shadow-2xl hover:shadow-inner min-[320px]:mt-10 xl:mt-52 rounded-lg h-min min-[320px]:mx-4 p-4 lg:px-8 pb-1 lg:text-2xl font-bold text-center">
               ABOUT
               <hr className="mb-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
-              <p className="transition ease-in-out hover:scale-105 min-[320px]:text-sm lg:text-lg font-normal">
+              <p className="text-left transition ease-in-out hover:scale-105 min-[320px]:text-sm lg:text-lg font-normal">
                 As a Computer Engineering student graduated in the spring of 2023 from University of North Texas,
                 I am a highly motivated and analytical individual with a strong foundation in both hardware and software systems.
                 Throughout my studies, I have gained a comprehensive understanding of computer systems and their applications,
@@ -51,18 +51,40 @@ export default function Home() {
               </p>
             </div>
             {/*---------------------------------------------------------------TITLE---------------------------------------------------------------*/}
-            {/* <div className="max-w-4xl shadow-2xl hover:shadow-inner min-[320px]:mt-10 md:mt-22 rounded-lg min-[320px]:mx-4 p-4 lg:px-8 lg:text-2xl font-bold text-center">
-              TITLE
+            <div className="font-serif max-w-4xl shadow-2xl hover:shadow-inner min-[320px]:mt-10 rounded-lg h-min min-[320px]:mx-4 p-4 lg:px-8 pb-1 lg:text-2xl font-bold text-center">
+              EXPERIENCE
               <hr className="mb-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
-              <p className="transition ease-in-out hover:scale-105 min-[320px]:text-sm lg:text-xl font-normal">
-                THIS IS A TEST: Hunt and peck (two-fingered typing), also known as Eagle Finger, is a common form of typing in which
-                the typist presses each key individually. Instead of relying on the memorized position of keys, the
-                typist must find each key by sight. Use of this method may also prevent the typist from being able to
-                see what has been typed without glancing away from the keys. Although good accuracy may be achieved,
-                any typing errors that are made may not be noticed immediately due to the user not looking at the screen.
-                There is also the disadvantage that because fewer fingers are used, those that are used are forced to move a much greater distance.
-              </p>
-            </div> */}
+              <h1 className="text-left  transition ease-in-out hover:scale-105 min-[320px]:text-sm lg:text-lg font-semibold">
+                GOOD SAMARITAN SOCIETY
+                <h1 className="mb-4 ml-2 text-left min-[320px]:text-sm lg:text-md font-normal">
+                  Denton, TX
+                </h1>
+              </h1>
+              <h1 className="text-left  transition ease-in-out hover:scale-105 min-[320px]:text-sm lg:text-lg font-semibold">
+                TITLE
+                <h1 className="text-left ml-2 min-[320px]:text-sm lg:text-lg font-normal">
+                  Business Office Receptionist
+                </h1>
+                <h1 className="mb-4 ml-2 text-left min-[320px]:text-sm lg:text-lg font-normal">
+                  <span className="cursor-pointer whitespace-nowrap px-1 py-0.5 rounded-full dark:bg-yellow-900 dark:text-yellow-300">10-2021</span> TO <span className="cursor-pointer whitespace-nowrap px-1 py-0.5 rounded-full dark:bg-yellow-900 dark:text-yellow-300">PRESENT</span>
+                </h1>
+              </h1>
+              <h1 className="text-left transition ease-in-out hover:scale-105 min-[320px]:text-sm lg:text-lg font-semibold">
+                RESPONSIBILITIES
+                {[
+                  ['Drafted correspondence and proofed outgoing memos for accuracy'],
+                  ['Welcomed on-site visitors and directed to appropriate personnel'],
+                  ['Assisted with completion of forms or sign-in procedures'],
+                  ['Managed digital and analog filing systems to protect confidential data'],
+                  ['Established and maintained good communications with personnel'],
+                  ['Coordinated service providers for office equipment maintenance and repair']
+                ].map(([tasks]) => (
+                  <ul className="ml-8 text-left list-disc transition ease-in-out hover:scale-105 min-[320px]:text-sm lg:text-lg font-normal">
+                    <li>{tasks}</li>
+                  </ul>
+                ))}
+              </h1>
+            </div>
             {/*---------------------------------------------------------------Projects---------------------------------------------------------------*/}
             <div className="overflow-hidden hover:overflow-auto flex mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
               {[
@@ -72,7 +94,7 @@ export default function Home() {
                 ['Project IV', 'https://github.com/Zed-4/Texas-Census-Data', '/map.png', 'Texas-Census-Data', 'Texas Census Data Map', 'A cencus data map of Texas built using ©mapbox and Next.js', '12-2022', 'Next.js', '©Mapbox'],
               ].map(([projectTitle, projectUrl, projectImg, projectAlt, projectName, projectDesc, projectDates, skills, skillsSecond]) => (
                 <div className="">
-                  <h2 className="shadow-md text-2xl font-bold  ml-2 tracking-tight text-gray-900">{projectTitle}</h2>
+                  <h2 className="mr-2 shadow-md text-2xl font-bold  ml-2 tracking-tight text-gray-900">{projectTitle}</h2>
                   <div className="shadow-md hover:shadow-inner mx-2 p-1 mt-2 gap-x-6 gap-y-10 min-[320px]:h-48 lg:h-80">
                     <div className="group relative">
                       <div className="aspect-h-1 aspect-w-1 min-[320px]:w-20 lg:w-48 overflow-hidden rounded-md lg:aspect-none group-hover:opacity-50">
@@ -93,14 +115,14 @@ export default function Home() {
                   </div>
                   <div className="flex flex-wrap">
                     <div className="ml-2 w-min h-min whitespace-nowrap transition ease-in-out hover:scale-110 cursor-pointer bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">{skills}</div>
-                    <div className="ml-2 w-min h-min whitespace-nowrap transition ease-in-out hover:scale-110 cursor-pointer bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">{skillsSecond}</div>
+                    <div className="mb-10 ml-2 w-min h-min whitespace-nowrap transition ease-in-out hover:scale-110 cursor-pointer bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">{skillsSecond}</div>
                   </div>
                 </div>
               ))}
             </div>
           </div>
         </div>
-        {/*---------------------------------------------------------------Footer--------------------------------sm:left-1/4 sm:right-1/4-------------------------------*/}
+        {/*---------------------------------------------------------------Footer---------------------------------------------------------------*/}
         <section className="pr-2 rounded-full absolute bottom-0 m-auto min-[320px]:left-5 min-[320px]:right-5min-[320px]:left-5 min-[320px]:right-5 lg:w-2/5 bg-cover bg-center bg-[url(https://gifdb.com/images/high/computer-system-coding-j3szfjv9fwb5at9x.gif)]">
           <div className="rounded-full backdrop-blur-sm flex justify-center">
             {[
