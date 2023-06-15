@@ -1,7 +1,8 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 # Main Page
-![alt text](https://gitlab.com/mellowship-dev/abtinortgoli-nextjs-tailwind/-/raw/main/public/main.png)
+![image](https://github.com/Zed-4/Portfolio-nextjs-tailwind/assets/8176316/d307f437-2a46-4c7f-ae99-4b904a8e52d0)
+
 # Getting Started
 
 ## First, run the development server:
