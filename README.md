@@ -1,6 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 # Main Page
+![image](https://github.com/Zed-4/Portfolio-nextjs-tailwind/assets/8176316/372d625e-9a17-4c07-8701-06fa18449c2d)
 
 # Getting Started
 
